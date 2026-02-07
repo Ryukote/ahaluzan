@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Halužan | Senior Software Architect & Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #08080a;
+            color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.04);
+            transform: translateY(-2px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 30%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tech-tag {
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .tech-pill {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tech-pill:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: #3b82f6;
+            color: #60a5fa;
+        }
+
+        .custom-bullet {
+            list-style-type: none;
+        }
+        .custom-bullet li::before {
+            content: "•";
+            color: #3b82f6;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter uppercase">ANTONIO<span class="text-blue-500">.</span>HALUŽAN</div>
+            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest">
+                <a href="#experience" class="hover:text-blue-400 transition">EXPERIENCE</a>
+                <a href="#ai-efficiency" class="hover:text-blue-400 transition">AI WORKFLOW</a>
+                <a href="#skills" class="hover:text-blue-400 transition">SKILLS</a>
+                <a href="#contact" class="text-blue-500 border border-blue-500/50 px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition uppercase tracking-widest">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -top-20 -right-20"></div>
+        <div class="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
+            <div data-aos="fade-right">
+                <div class="inline-block px-3 py-1 mb-4 rounded-full border border-blue-500/30 bg-blue-500/5 text-blue-400 text-[10px] font-bold tracking-[0.2em] uppercase">
+                    Available for B2B & Contracting
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Senior <span class="gradient-text">Software Architect</span></h1>
+                <p class="text-lg text-gray-400 mb-8 leading-relaxed">
+                    Senior .NET engineer with 10+ years of experience across enterprise systems, SaaS products and team leadership.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="Antonio Halužan - CV.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold transition flex items-center gap-2">
+                        <i data-lucide="file-down" class="w-5 h-5"></i> Download CV
+                    </a>
+                    <a href="https://linkedin.com/in/antoniohaluzan" target="_blank" class="glass-card px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-white/5">
+                        <i data-lucide="linkedin" class="w-5 h-5 text-blue-400"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center" data-aos="zoom-in">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-500 rounded-3xl blur-2xl opacity-10"></div>
+                    <img src="ja.jpg" alt="Antonio Halužan" class="relative w-72 h-72 md:w-80 md:h-80 object-cover rounded-3xl border border-white/10 shadow-2xl transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="w-12 h-[1px] bg-blue-500"></span> Technical Stack
+        </h2>
+        <div class="flex flex-wrap gap-4">
+            <div class="tech-pill"><i data-lucide="box" class="w-5 h-5 text-blue-500"></i> .NET</div>
+            <div class="tech-pill"><i data-lucide="code-2" class="w-5 h-5 text-blue-500"></i> React</div>
+            <div class="tech-pill"><i data-lucide="terminal" class="w-5 h-5 text-blue-500"></i> JavaScript</div>
+            <div class="tech-pill"><i data-lucide="file-json" class="w-5 h-5 text-blue-500"></i> TypeScript</div>
+            <div class="tech-pill"><i data-lucide="database" class="w-5 h-5 text-blue-500"></i> SQL Server</div>
+            <div class="tech-pill"><i data-lucide="database" class="w-5 h-5 text-blue-500"></i> PostgreSQL</div>
+            <div class="tech-pill"><i data-lucide="container" class="w-5 h-5 text-blue-500"></i> Docker</div>
+            <div class="tech-pill"><i data-lucide="shield-check" class="w-5 h-5 text-blue-500"></i> Keycloak</div>
+            <div class="tech-pill"><i data-lucide="lock" class="w-5 h-5 text-blue-500"></i> Auth0</div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-32 max-w-5xl mx-auto px-6 relative">
+        <h2 class="text-3xl font-bold mb-16 flex items-center gap-4">
+            <span class="w-12 h-[1px] bg-blue-500"></span> Career Timeline
+        </h2>
+        
+        <div class="space-y-10 border-l border-white/5 ml-4 md:ml-0">
+            <div class="relative pl-10" data-aos="fade-up">
+                <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">Software Engineer @ Sartorius Croatia </h3>
+                        <span class="text-blue-400 font-mono text-sm">Nov 2023 — Jun 2025</span>
+                    </div>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2 pl-4 custom-bullet">
+                        <li>Architecturing and developing multi tenant SaaS solution for biotechnology processes from the scratch</li>
+                        <li>Managing team of 3 developers</li>
+                        <li>Code reviews</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">.NET</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Linux</span><span class="tech-tag">Github Actions</span><span class="tech-tag">Docker</span><span class="tech-tag">Keycloak</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-10" data-aos="fade-up">
+                <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 bg-gray-600 rounded-full"></div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">Software Engineer @ Combis d.o.o.</h3>
+                        <span class="text-gray-500 font-mono text-sm">Oct 2019 — Oct 2023</span>
+                    </div>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2 pl-4 custom-bullet">
+                        <li>Developing and architecturing ministry solution for incentives for small and medium sized businesses</li>
+                        <li>Managing team of 6 developers</li>
+                        <li>Code review</li>
+                        <li>Mentoring</li>
+                        <li>Using SCRUM methodology</li>
+                        <li>Working with client on new features</li>
+                        <li>Bridge between developers, project manager, tester and designer</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">.NET</span><span class="tech-tag">SQL Server</span><span class="tech-tag">Angular</span><span class="tech-tag">Docker</span><span class="tech-tag">Keycloak</span><span class="tech-tag">SCRUM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-10" data-aos="fade-up">
+                <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 bg-gray-600 rounded-full"></div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">.NET Developer @ KING ICT</h3>
+                        <span class="text-gray-500 font-mono text-sm">Jul 2018 — Oct 2019</span>
+                    </div>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2 pl-4 custom-bullet">
+                        <li>Reengineering existing incentive system for agency from ministry for small and medium sized businesses</li>
+                        <li>Using SCRUM methodology</li>
+                        <li>Code review</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">.NET</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Docker</span><span class="tech-tag">Keycloak</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-10" data-aos="fade-up">
+                <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 bg-gray-600 rounded-full"></div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">Software Developer @ KOR</h3>
+                        <span class="text-gray-500 font-mono text-sm">Jul 2017 — Jun 2018</span>
+                    </div>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2 pl-4 custom-bullet">
+                        <li>Developing new features for hotel management system</li>
+                        <li>Optimizing existing features for hotel management system</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">.NET</span><span class="tech-tag">Windows Forms</span><span class="tech-tag">Web API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-10" data-aos="fade-up">
+                <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">CEO & Founder @ Box Mobile j.d.o.o.</h3>
+                        <span class="text-blue-400 font-mono text-sm">Aug 2014 — Dec 2016</span>
+                    </div>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2 pl-4 custom-bullet">
+                        <li>Designing and developing mobile applications</li>
+                        <li>Designing databases</li>
+                        <li>Designing and developing backend system for mobile applications</li>
+                        <li>Working with clients on requirements</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">Xamarin</span><span class="tech-tag">.NET</span><span class="tech-tag">SQL Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative pl-10" data-aos="fade-up">
+                <div class="absolute left-[-5px] top-2 w-2.5 h-2.5 bg-gray-600 rounded-full"></div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">.NET Developer @ 3 PRO</h3>
+                        <span class="text-gray-500 font-mono text-sm">Sep 2013 — Dec 2013</span>
+                    </div>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2 pl-4 custom-bullet">
+                        <li>Developing SharePoint plugins in .NET</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">.NET</span><span class="tech-tag">SharePoint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-efficiency" class="py-24 bg-blue-500/5 px-6">
+        <div class="max-w-5xl mx-auto text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-4">AI-Augmented Engineering</h2>
+            <p class="text-gray-400">Expert usage of next-gen tools to accelerate delivery without compromising quality.</p>
+        </div>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-8 rounded-2xl border-t-2 border-blue-500" data-aos="fade-up">
+                <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="terminal" class="text-blue-400"></i>
+                </div>
+                <h4 class="font-bold text-white mb-3 text-lg">Claude Code</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Advanced reasoning for complex refactoring and large-scale architectural planning.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl border-t-2 border-purple-500" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="zap" class="text-purple-400"></i>
+                </div>
+                <h4 class="font-bold text-white mb-3 text-lg">Gemini Code Assist</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Real-time automation for unit tests, boilerplate, and tech documentation.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl border-t-2 border-green-500" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="cpu" class="text-green-400"></i>
+                </div>
+                <h4 class="font-bold text-white mb-3 text-lg">OpenAI Codex</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Streamlining the bridge between logic requirements and high-performance execution.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-lab" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto glass-card p-12 rounded-[40px] border-blue-500/20 relative overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="flex items-center gap-2 text-blue-400 mb-4 text-xs font-bold tracking-widest uppercase">
+                        <i data-lucide="flask-conical" class="w-4 h-4"></i> R&D Lab
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">Python Scraping & TensorFlow</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        In my free time, I build custom <b>Python scrapers</b> to harvest complex data sets, which I then use to train <b>TensorFlow</b> predictive AI models. 
+                    </p>
+                    <div class="flex gap-4">
+                        <span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Scraping</span>
+                    </div>
+                </div>
+                <div class="space-y-4" data-aos="fade-left">
+                    <div class="p-5 bg-white/5 rounded-2xl border border-white/10">
+                        <h4 class="font-bold text-sm mb-2 text-blue-400">Published Research</h4>
+                        <ul class="text-xs text-gray-500 space-y-2">
+                            <li>• "WebBrowser - web scraping (en-US)"</li>
+                            <li>• "Avoiding deadlock in async/await"</li>
+                            <li>• "Custom Registry Class"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-32 max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-2xl" data-aos="fade-up">
+            <h4 class="font-bold mb-6 flex items-center gap-2 text-blue-500"><i data-lucide="award"></i> Certifications</h4>
+            <ul class="text-sm text-gray-400 space-y-3">
+                <li>• Microsoft Certified Professional</li>
+                <li>• MTA: Software Development Fundamentals</li>
+                <li>• Developing ASP.NET MVC Web Applications</li>
+            </ul>
+        </div>
+        <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="font-bold mb-6 flex items-center gap-2 text-blue-500"><i data-lucide="globe"></i> Languages</h4>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-[10px] font-bold mb-1 tracking-widest uppercase"><span>English</span><span>Advanced</span></div>
+                    <div class="h-1 bg-white/10 rounded-full"><div class="h-full bg-blue-500 w-[90%]"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-[10px] font-bold mb-1 tracking-widest uppercase"><span>Croatian</span><span>Native</span></div>
+                    <div class="h-1 bg-white/10 rounded-full"><div class="h-full bg-blue-500 w-full"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-[10px] font-bold mb-1 tracking-widest uppercase"><span>Japanese</span><span>Elementary</span></div>
+                    <div class="h-1 bg-white/10 rounded-full"><div class="h-full bg-blue-500 w-[30%]"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="font-bold mb-6 flex items-center gap-2 text-blue-500"><i data-lucide="layers"></i> Architecture </h4>
+            <p class="text-sm text-gray-400">Microservices, Multi-tenant SaaS, CI/CD, SQL/NoSQL Optimization, and Team Leadership.</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 border-t border-white/5 text-center px-6">
+        <div class="max-w-2xl mx-auto" data-aos="zoom-in">
+            <h2 class="text-4xl font-bold mb-8">Let's connect.</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                <a href="mailto:ryukote@outlook.com" class="text-xl font-bold hover:text-blue-500 transition">ryukote@outlook.com </a>
+                <a href="tel:+385959180338" class="text-xl font-bold hover:text-blue-500 transition">+385 95 918 0338 </a>
+            </div>
+            <p class="text-[10px] text-gray-600 uppercase tracking-[0.3em]">© 2026 Antonio Halužan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+        lucide.createIcons();
+    </script>
+</body>
+</html>
